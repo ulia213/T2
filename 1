@@ -674,3 +674,18 @@ apt install p7zip-full
 7z x /root/Additional.7z
 apt install ./Yandex.deb -y
 yandex-browser-stable --no-sandbox
+
+
+
+
+////////проверка пинга 
+hq-cli : ssh sshuser 192.168.100.2 -p 2026
+GRE: 10.10.0.1 | 10.10.0.2
+hq-srv : 192.168.200.2 | ping ya.ru | ping br-rtr.au-team.irpo
+br-srv:  ansible all -m ping 
+ha-cli : http://192.168.200.2:8080 | http://192.168.100.2
+isp : http://172.16.1.2:8080 | http://172.16.2.2:8080 |http://web.au-team.irpo | http://docker.au-team.irpo  (Вводим имя пользователя: WEB Пароль: P@ssw0rd)
+
+
+
+
